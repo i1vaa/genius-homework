@@ -1,3 +1,28 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2');
+}
+
 :root {
   --color-brand: #011c44;
   --color-primary-dark: #2b7fff;
@@ -7,9 +32,16 @@
 /* Global */
 body {
   color: var(--color-brand);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
 }
 ul {
   list-style-type: none;
+}
+address {
+  font-style: normal;
 }
 /* Button */
 .button {
@@ -18,23 +50,70 @@ ul {
   border: 2px solid var(--color-primary-dark);
   border-radius: 32px;
   cursor: pointer;
+  font-weight: 600;
+  line-height: normal;
 }
 .button:hover {
   color: var(--color-brand);
   background-color: transparent;
 }
+.button-information {
+  color: #4a4a4a;
+  font-size: 12px;
+  line-height: 1.5;
+}
 /* Link */
-.link {
+.link-header {
   color: var(--color-brand);
 }
-.link:hover {
+.link-header:hover {
   color: var(--color-primary-dark);
+  font-weight: 700;
 }
 /* Hero section */
 .hero-title {
   color: var(--color-primary-dark);
+  font-family: 'Play', sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.8;
 }
 /* Advanteges section */
+.section-title {
+  font-family: 'Play', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+}
 .section-title .accent {
   color: var(--color-primary-dark);
+}
+/* Basic -information */
+
+.basic-information-section {
+  font-size: 22px;
+  line-height: 1.7;
+}
+.basic-information-section .accent-2 {
+  font-weight: 700;
+}
+/* Why us section */
+
+.why-us-section {
+  line-height: 1.3;
+}
+/* Contact section */
+.footer {
+  background: var(--color-brand);
+}
+.link-footer {
+  color: var(--color-primary-light);
+  font-size: 16px;
+}
+.link-footer:hover {
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+.adress-copyright {
+  font-size: 13px;
+  color: #747272;
 }
