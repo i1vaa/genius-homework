@@ -65,6 +65,7 @@ address {
 /* Link */
 .link-header {
   color: var(--color-brand);
+  text-decoration: none;
 }
 .link-header:hover {
   color: var(--color-primary-dark);
