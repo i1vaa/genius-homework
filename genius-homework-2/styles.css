@@ -264,18 +264,18 @@ address {
   );
 }
 .photo-1 {
-  background-image: url(../images/procedure-1.png);
+  background-image: url(../genius-homework-2/images/procedure-1.png);
   background-repeat: no-repeat;
   background-position: center top;
   border-radius: 120px 4px;
 }
 .photo-2 {
-  background-image: url(../images/procedure-2.png);
+  background-image: url(../genius-homework-2/images/procedure-2.png);
   background-repeat: no-repeat;
   background-position: center top;
 }
 .photo-3 {
-  background-image: url(../images/procedure-3.png);
+  background-image: url(../genius-homework-2/images/procedure-3.png);
   background-repeat: no-repeat;
   background-position: center top;
 }
