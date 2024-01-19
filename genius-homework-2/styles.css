@@ -39,6 +39,12 @@
 body {
   margin: 0 auto;
   color: var(--color-brand);
+  background: linear-gradient(
+    38deg,
+    rgba(43, 127, 255, 0.2) 39.74%,
+    rgba(43, 127, 255, 0) 54.16%,
+    rgba(43, 127, 255, 0) 66.66%
+  );
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -66,8 +72,9 @@ ul {
 }
 .container {
   width: 100%;
-  max-width: 1488px;
+  max-width: 1288px;
   margin: 0 auto;
+  padding: 24px;
 }
 address {
   font-style: normal;
@@ -93,6 +100,7 @@ address {
   font-size: 12px;
   line-height: 1.5;
 }
+
 /* Link */
 .link-header {
   color: var(--color-brand);
@@ -100,7 +108,6 @@ address {
 }
 .link-header:hover {
   color: var(--color-primary-dark);
-  font-weight: 700;
 }
 /* Headeer section */
 .header-container {
@@ -191,8 +198,14 @@ address {
   width: 335px;
   height: 328px;
 }
-
+.top-photo {
+  margin-right: 176px;
+}
+.buttom-photo {
+  margin-left: 196px;
+}
 /* Why us section */
+
 .why-us-title {
   margin-bottom: 48px;
 }
@@ -202,20 +215,22 @@ address {
 .advantages {
   display: flex;
   justify-content: center;
+  text-align: center;
   gap: 56px;
   padding: 32px 24px 32px 24px;
 }
 .advantages-item {
-  display: flex;
-  text-align: center;
-  width: 316px;
-  height: 181px;
-  padding: 24px 32px;
+  width: 252px;
+  height: 133px;
+  padding: 24px 32px 24px 32px;
   font-size: 18px;
-  border: 1px solid black;
+  border: 1px;
+  border-radius: 32px;
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
   border-radius: 32px;
   background: #fff;
 }
+
 /* Procedures */
 .our-procedures-title {
   margin-bottom: 48px;
@@ -226,24 +241,43 @@ address {
   gap: 32px;
 }
 .procedures-list {
-  height: 456px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 16px;
 }
+.procedures-text {
+  color: white;
+  width: 152px;
+  height: 52px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+}
 .procedures-card {
-  background-image: linear-gradient(
+  padding: 372px 77px 32px 115px;
+  border: 1px;
+  border-radius: 120px 4px;
+  background: linear-gradient(
     180deg,
     rgba(1, 28, 68, 0) 48.53%,
     rgba(1, 28, 68, 0.73) 84.61%,
-    var(--color-brand) 101.39%
+    #011c44 101.39%
   );
-  border-radius: 120px 4px;
-  border: 1px solid lightgrey;
 }
-.procedures-item {
-  flex-basis: calc((100%-32px) / 3);
+.photo-1 {
+  background-image: url(../images/procedure-1.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  border-radius: 120px 4px;
+}
+.photo-2 {
+  background-image: url(../images/procedure-2.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.photo-3 {
+  background-image: url(../images/procedure-3.png);
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 /* Carousel */
 .carousel-buttom {
@@ -305,6 +339,10 @@ address {
   flex-basis: 50%;
   gap: 20px;
 }
+.text-footer {
+  margin-bottom: 30px;
+}
+
 .address-list {
   flex-grow: 1;
 }
@@ -318,7 +356,6 @@ address {
 }
 .link-footer:hover {
   color: var(--color-primary-dark);
-  font-weight: 700;
 }
 .icon-footer {
   stroke: var(--color-primary-light);
