@@ -39,12 +39,12 @@
 body {
   margin: 0 auto;
   color: var(--color-brand);
-  background: linear-gradient(
+  /* background: linear-gradient(
     38deg,
     rgba(43, 127, 255, 0.2) 39.74%,
     rgba(43, 127, 255, 0) 54.16%,
     rgba(43, 127, 255, 0) 66.66%
-  );
+  ); */
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -66,6 +66,12 @@ ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
 }
 .section {
   padding: 48px 0;
@@ -132,11 +138,17 @@ address {
 /* Hero section */
 .hero-section {
   padding: 124px 667px 127px 245px;
-  background-image: url(../genius-homework-2/images/background-women.jpg);
+  background-image: linear-gradient(
+      89deg,
+      #fff 30.62%,
+      rgba(255, 255, 255, 0.85) 41.31%,
+      rgba(255, 255, 255, 0.19) 58.65%,
+      rgba(255, 255, 255, 0) 72.78%
+    ),
+    url(../images/background-women.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  background-attachment: fixed;
 }
 .hero-information {
   margin-bottom: 14px;
@@ -179,9 +191,13 @@ address {
 .information-text {
   margin-bottom: 40px;
 }
+.information-text-2 {
+  margin-bottom: 0px;
+}
 .basic-information-section .accent-2 {
   font-weight: 700;
 }
+
 .basic-information-container {
   display: flex;
   justify-content: space-between;
@@ -220,8 +236,8 @@ address {
   padding: 32px 24px 32px 24px;
 }
 .advantages-item {
-  width: 252px;
-  height: 133px;
+  /* width: 252px;
+  height: 133px; */
   padding: 24px 32px 24px 32px;
   font-size: 18px;
   border: 1px;
@@ -264,18 +280,36 @@ address {
   );
 }
 .photo-1 {
-  background-image: url(../genius-homework-2/images/procedure-1.png);
+  background-image: linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 48.53%,
+      rgba(1, 28, 68, 0.73) 84.61%,
+      #011c44 101.39%
+    ),
+    url(../images/procedure-1.png);
   background-repeat: no-repeat;
   background-position: center top;
   border-radius: 120px 4px;
 }
 .photo-2 {
-  background-image: url(../genius-homework-2/images/procedure-2.png);
+  background-image: linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 48.53%,
+      rgba(1, 28, 68, 0.73) 84.61%,
+      #011c44 101.39%
+    ),
+    url(../images/procedure-2.png);
   background-repeat: no-repeat;
   background-position: center top;
 }
 .photo-3 {
-  background-image: url(../genius-homework-2/images/procedure-3.png);
+  background-image: linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 48.53%,
+      rgba(1, 28, 68, 0.73) 84.61%,
+      #011c44 101.39%
+    ),
+    url(../images/procedure-3.png);
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -317,11 +351,14 @@ address {
 /* Footer */
 .footer {
   background: var(--color-brand);
-  padding: 56px 0;
+  padding-top: 56px;
 }
 .footer-container {
   display: flex;
   gap: 20px;
+}
+.footer-style {
+  margin-bottom: 16px;
 }
 .footer-nav {
   display: flex;
